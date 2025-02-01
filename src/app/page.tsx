@@ -1,19 +1,28 @@
 import Image from "next/image";
 
+import LatestTrending from "./components/LatestTrending"
+
 export default function Home() {
   return (
 
-    <header className="header">
-      <div className="page-container">
-        <span>Hiving</span>
-        <nav className="flex">
-          <ul>
-            <li>Trend Prediction</li>
-            <li>Content Gap</li>
-            <li>About</li>
-          </ul>
-        </nav>
+    <>
+      <header className="header">
+        <div className="flex justify-between items-center max-w-[var(--maxPage)] w-full p-7">
+          <span className="text-lg">Hiving</span>
+          <nav >
+            <ul className="flex gap-4">
+              <div id='shine-text'>Trend Prediction</div>
+              <li id='shine-text'>Content Gap</li>
+              <li id='shine-text'>KW Tool</li>
+              <li id='shine-text'>About</li>
+            </ul>
+          </nav>
         </div>
-    </header>
+      </header>
+      <div className="body">
+        <LatestTrending />
+      </div>
+    </>
+
   );
 }
