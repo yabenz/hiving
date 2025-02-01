@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --medGray: #333;
+  --lightGray: #eee;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +26,21 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.header{
+  display: flex;
+  width: 100%;
+  background-color: var(--background);
+  border-bottom: solid .5px var(--medGray);
+}
+
+.page-container{
+  display: flex;
+  width: 100%;
+  max-width: 1445px;
+}
+.flex{
+  display: flex;
+  width: 100%;
 }
