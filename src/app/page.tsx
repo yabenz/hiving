@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import LatestTrending from "./components/LatestTrending"
+import Trending from "./components/Trending"
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </header>
       <div className="body">
-        <LatestTrending />
+        <Trending />
       </div>
     </>
 
