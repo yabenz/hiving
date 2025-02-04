@@ -1,0 +1,19 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border-width: 1px;
+  border-color: #222;
+  padding: 23px;
+  border-radius: 23px;
+  background-color: #111;
+  max-width: 645px;
+  cursor: pointer;
+  max-height: 233px;
+
+}
+
+.card:hover{
+
+ background-color: #141414; 
+}

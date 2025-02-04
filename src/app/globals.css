@@ -9,7 +9,7 @@
   --foreground: #171717;
   --medGray: #333;
   --lightGray: #eee;
-
+ --TSize3: 1.3rem;
   --maxPage: 1245px;
 }
 
@@ -48,12 +48,16 @@ body {
   width: 100%;
   max-width: 1445px;
 }
-.flex{
+.flexx{
   display: flex;
   width: 100%;
 }
 
-
+.flex-end{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
 
 .body{
   display: flex;
@@ -81,3 +85,22 @@ h1{
 }
 
 
+h3{
+  font-size: var(--TSize3);
+  font-weight: 600;
+}
+
+
+.list-style{
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+    list-style-type: decimal;
+
+}
+
+.list-style li::marker {
+  color: #643bf6; 
+  font-weight: bold; 
+  font-size: 1.25rem;
+}
