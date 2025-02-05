@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Trending from "./components/Trending"
+import RisingStars from "./components/RisingStars"
 
 export default function Home() {
   return (
@@ -20,9 +21,11 @@ export default function Home() {
         </div>
       </header>
       <div className="body">
-        <Trending />
+        <div className="flex justify-between items-start max-w-[var(--maxPage)] w-full">
+          <Trending />
+          <RisingStars />
+        </div>
       </div>
     </>
-
   );
 }
