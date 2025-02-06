@@ -9,7 +9,7 @@
   --foreground: #171717;
   --medGray: #333;
   --lightGray: #eee;
- --TSize3: 1.3rem;
+  --TSize3: 1.3rem;
   --maxPage: 1245px;
 }
 
@@ -32,7 +32,7 @@ body {
   }
 }
 
-.header{
+.header {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -43,64 +43,72 @@ body {
 
 }
 
-.page-container{
+.page-container {
   display: flex;
   width: 100%;
   max-width: 1445px;
 }
-.flexx{
+
+.flexx {
   display: flex;
   width: 100%;
 }
 
-.flex-end{
+.flex-end {
   display: flex;
   justify-content: end;
   width: 100%;
 }
 
-.body{
+.body {
   display: flex;
-justify-content: center;
-align-items: center;
-box-sizing: border-box;
+
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
 
 
 }
 
-h1{
+h1 {
   font-size: 23px;
   font-family: "Archivo", "serif";
   font-weight: 600;
   padding: 5px 23px;
 }
 
-#shine-text{
+#shine-text {
   color: #eee;
   cursor: pointer;
 }
 
-#shine-text:hover{
+#shine-text:hover {
   text-shadow: 0px 0px 11px #d4d3f9;
 }
 
 
-h3{
+h3 {
   font-size: var(--TSize3);
   font-weight: 600;
 }
 
 
-.list-style{
+.list-style {
   display: flex;
   flex-direction: column;
   gap: 11px;
-    list-style-type: decimal;
+  /* list-style-type: decimal; */
 
 }
 
 .list-style li::marker {
-  color: #643bf6; 
-  font-weight: bold; 
+  color: #643bf6;
+  font-weight: bold;
   font-size: 1.25rem;
+
+}
+
+h1 {
+  font-size: 1.8rem;
 }
